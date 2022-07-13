@@ -1,0 +1,78 @@
+<app-header></app-header>
+<div class="container-edit">
+        <div class="col-md-4">
+            <div class="col-md-12 editText">
+                <h1>Edit Profile</h1>
+            </div>
+            <div class="col-md-12 profileData">
+                <div class="col-md-3 profileAvatar">
+                    <img src="../../assets/images/Netflix-avatar1.png">
+                </div>
+                <div class="col-md-9 profileEdit">
+                    <div class="col-md-12 textEdlit">
+                        <input type="text" class="col-12 form-controls" placeholder="Name">
+                    </div>
+                    <div class="col-md-12 langageEdlit">
+                        <span>Language:</span>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            </button>
+                            <div class="col-md-12 dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="col-md-2 dropdown-item" href="#">Action</a>
+                              <a class="col-md-2 dropdown-item" href="#">Another action</a>
+                              <a class="col-md-2 dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="maturitySetting">
+                        <h5>Maturity Settings:</h5>
+                        
+                        <div class="boxMaturity">
+                            <span>All Maturity Ratings</span>
+                        </div>
+                        <div class="maturityText">
+                            <p>Show titles of all maturity ratings for this profile.</p>
+                        </div>
+                        <div class="EditMaturityBtn">
+                            <a routerLink="/editProfil" class="editBtn">Edit</a>
+                        </div>
+                    </div>
+
+                    <div class="autoplay">
+                        <div class="col-md-12 textEdlit">
+                            <h5>Autoplay controls</h5>
+                        </div>
+
+                        <div class="autoplay-option">
+                            <input class="col-1 form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="col-11 form-check-label" for="flexCheckDefault">
+                                Autoplay next episode in a series on all devices.
+                            </label>
+                        </div>
+
+                        <div class="autoplay-option">
+                            <input class="col-1 form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="col-11 form-check-label" for="flexCheckDefault">
+                                Autoplay previews while browsing on all devices.
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>             
+            </div>
+            <div class="col-md-12 btnEditPage d-flex">
+                <div class="btnSave">
+                    <button routerLink="/browser" class="saveBtn">Save</button>
+
+                </div>
+                <div class="btnCancel">
+                    <button routerLink="/ManageProfiles" (click)="TesteditProfilTest()" class="cancelBtn">Cancel</button>
+                </div>
+
+            </div>
+        </div>
+
+</div>
+

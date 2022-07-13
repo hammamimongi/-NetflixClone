@@ -1,0 +1,149 @@
+.container-edit{
+    width: 100%;
+    z-index: 0;position: 
+    fixed;top: 1;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    color: #aeaeae;
+}
+.editText h1{
+    font-size: 64px;
+    width: 100%;
+    font-family: netflixMedium;
+    color: #b4b4b4;
+}
+.profileData{
+    border-top:  1px solid #333;
+    border-bottom:  1px solid #333;
+    padding: 20px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.profileAvatar img{
+    width: 90%;
+    border-radius: 5px;
+}
+.profileEdit{
+    padding-left: 15px;
+}
+.textEdlit .form-controls{
+    border-radius: 0px;
+    border: none;
+    background: #666;
+    padding: 0.2em 0.6em;
+    font-size: 1.3vw;
+    color: white;
+    height: 38px;
+    outline: none;
+}
+input:focus{
+    outline: none;
+}
+.textEdlit .form-controls::placeholder {
+    color: white;
+}
+.langageEdlit{
+    padding: 20px 0px 20px;
+}
+.langageEdlit span {
+    color: #aeaeae;
+    font-size: 1.3vw;
+    font-family: netflixMedium;
+}
+.dropdown .dropdown-toggle{
+    width: 62px;
+    height: 32px;
+    border-radius: 0px;
+    border: 1px solid white;
+    background-color: transparent;
+    text-align: right;   
+}
+.dropdown .dropdown-toggle:focus{
+    background-color: #666;
+    outline: none !important;
+}
+.maturitySetting{
+    border-top:  1px solid #333;
+    border-bottom:  1px solid #333;
+    padding: 20px 0px 20px;
+    color: #cccccc;
+    font-family: netflixLight;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.maturitySetting h5{
+    font-size: 19px;
+    font-family: netflixLight;
+}
+.boxMaturity{
+    background-color: #333;
+    text-align: center;
+    font-family: netflixMedium;
+    width: 160px;
+    padding: 3px 0px 3px 0px;
+}
+.boxMaturity span{ 
+    font-size: 15px;
+}
+.maturityText p{ 
+    font-size: 15px;
+    padding-top: 10px;
+    font-family: netflixLight;
+}
+.EditMaturityBtn .editBtn{
+    font-size: 15px;
+    border: 1px solid #807e7a;
+    color:#807e7a;
+    background-color: transparent;
+    text-align: center;
+    padding: 7px 22px;
+    text-decoration: none;
+}
+.EditMaturityBtn .editBtn:hover{
+    border: 1px solid white;
+    color:white;
+}
+
+.autoplay{
+    padding: 22px 0;
+    color:#aeaeae;
+    font-family: netflixLight;
+    font-size: 19px;
+}
+.form-check-label{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 13.5px;
+    font-family: netflixLight;
+}
+.form-check-input{
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid #333333;
+    height: 30px;
+    width: 29px;
+    font-size: 18px;
+}
+.form-check-input:focus{
+    outline: none;
+}
+.btnEditPage{
+    font-family: 'netflixMedium';
+    margin-top: 45px;
+}
+
+.btnSave .saveBtn{
+    padding: 10px 30px;
+}
+.btnCancel{
+    margin-left: 15px;
+}
+.btnCancel .cancelBtn{
+    padding: 10px 30px;
+    background: transparent;
+    color: #807e7a;
+    border: 1px solid #807e7a;
+}

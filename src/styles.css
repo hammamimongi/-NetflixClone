@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: netflixBold;
+    src: url("assets/fonts/NetflixSansBold.otf") format("truetype");
+}
+@font-face {
+    font-family: netflixLight;
+    src: url("assets/fonts/NetflixSansLight.otf") format("truetype");
+}
+@font-face {
+    font-family: netflixMedium;
+    src: url("assets/fonts/NetflixSansMedium.otf") format("truetype");
+}
+
+html{
+    background-color: #141414;
+}
