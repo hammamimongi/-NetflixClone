@@ -10,6 +10,8 @@ import { EditProfilComponent } from './edit-profil/edit-profil.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ManageComponent } from './manage/manage.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 @NgModule({
@@ -19,14 +21,13 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     HeaderComponent,
     ManagerProfilesComponent,
     EditProfilComponent,
-    ManageComponent
+    ManageComponent,
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CarouselModule 
-
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

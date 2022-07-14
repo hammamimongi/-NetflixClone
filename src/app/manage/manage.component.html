@@ -1,0 +1,46 @@
+<app-header></app-header>
+<div class="carrouselcontainer">
+    
+    <div class="container">
+
+        <div class="imgType" (mouseover)="HoverType=true" (mouseout)="HoverType=false">
+            <div class="typeTitle">
+                <h2>The Classics</h2>
+            </div>
+            <owl-carousel-o  [options]="customOptions" #owlCar>
+                <ng-template carouselSlide><img src="../../assets/images/Netflix-avatar1.png"></ng-template>  
+                <ng-template carouselSlide><img src="../../assets/images/Netflix-avatar2.png"></ng-template>  
+                <ng-template carouselSlide><img src="../../assets/images/Netflix-avatar3.png"></ng-template>  
+                <ng-template carouselSlide><img src="../../assets/images/Netflix-avatar4.png"></ng-template>  
+                <ng-template carouselSlide><img src="../../assets/images/Netflix-avatar5.png"></ng-template>  
+                <ng-template carouselSlide><img src="../../assets/images/Netflix-avatar1.png"></ng-template> 
+                <ng-template carouselSlide><img src="../../assets/images/Netflix-avatar2.png"></ng-template>  
+                <ng-template carouselSlide><img src="../../assets/images/Netflix-avatar3.png"></ng-template>  
+                <ng-template carouselSlide><img src="../../assets/images/Netflix-avatar4.png"></ng-template>  
+                 
+                <ng-template carouselSlide><img src="../../assets/images/Netflix-avatar3.png"></ng-template>  
+                <ng-template carouselSlide><img src="../../assets/images/Netflix-avatar4.png"></ng-template>  
+                <ng-template carouselSlide><img src="../../assets/images/Netflix-avatar5.png"></ng-template>  
+                <ng-template carouselSlide><img src="../../assets/images/Netflix-avatar1.png"></ng-template> 
+                <ng-template carouselSlide><img src="../../assets/images/Netflix-avatar2.png"></ng-template>  
+                <ng-template carouselSlide><img src="../../assets/images/Netflix-avatar3.png"></ng-template>  
+                <ng-template carouselSlide><img src="../../assets/images/Netflix-avatar4.png"></ng-template>  
+            </owl-carousel-o>
+            <div class="btn-prev-next" >
+                <a class="btn-prev" (click)="owlCar.prev()" (mouseover)="HoverBtn=true">
+                    <svg *ngIf="HoverType||HoverBtn" 
+                    xmlns="http://www.w3.org/2000/svg" width="30" stroke="white" height="30" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+                  
+                </a>
+                <a class="btn-next" (click)="owlCar.next()">
+                    <svg *ngIf="HoverType ||HoverBtn"
+                    xmlns="http://www.w3.org/2000/svg" width="30" stroke="white" height="30" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                </a>
+              </div>
+        </div>
+    </div>
+</div>

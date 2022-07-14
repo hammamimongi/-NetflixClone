@@ -12,6 +12,9 @@
     src: url("assets/fonts/NetflixSansMedium.otf") format("truetype");
 }
 
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
 html{
     background-color: #141414;
 }
