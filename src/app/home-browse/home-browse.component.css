@@ -1,16 +1,34 @@
-.carrouselcontainer{ 
-    background-color: #141414;
-    width: 100%;
-    padding-top: 250px;
+.headerBrowser{
+    z-index: 2;
 }
-.imgType{ 
-    height: 220px;
+.filmWrapper{
+    position: relative;
+    top: 0px;
+}
+
+
+.carrouselcontainer{ 
+  z-index: 1;
+  background-color: #141414;
+  position: relative;
+}
+.owl-item{ 
+  max-width: 205px !important;
+  max-height: 110px !important;
 }
 .CarouselImg{ 
-    max-width: 150px;
+    max-width: 205px;
+    max-height: 110px;
     border-radius: 5px;
     object-fit: cover;
     cursor: pointer ;
+}
+.imgType{
+  max-height: 160px;
+  padding-top: 30px;
+}
+.container{ 
+  max-width:100% ;
 }
 .CarouselImg:hover{ 
     border:1px solid white;
@@ -19,7 +37,7 @@
     width: 57px;
     position: relative;
     top: -150px;
-    z-index: 100;
+    z-index: 2;
   }
 
   #btn-nextId{
@@ -27,15 +45,21 @@
     position: relative;
     top: -300px;
   }
-
+  #MyList{
+    margin-top: -200px;
+    z-index: 102;
+    position: relative;
+  }
   .btn-prev{
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    height: 150px;
+    height: 110px;
     width: 57px;
     left: -2px;
+    position: relative;
+    top: 40px;
     background: linear-gradient(90deg,#141414 0,hsla(0,0%,8%,.4));
     border: none;
     border-radius: 0px 5px 5px 0px;
@@ -46,11 +70,12 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    right: 0;
-    height: 150px;
-    width: 65px;
+    position: relative;
+    top: 79px;
+    height: 110px;
+    width: 69px;
     color: #fff;
-    background: linear-gradient(270deg,#141414 0,hsla(0,0%,8%,.4));
+    background: hsla(0,0%,8%,.5);
     border: none;
     border-radius: 5px 0px 0px 5px;
     text-decoration: none;
@@ -63,6 +88,11 @@
   .typeTitle h2{
     font-family: netflixMedium;
     color: white;
+    z-index: 10;    
+    font-size: 1.4vw;
+    line-height: 1.25vw;
+    left: 3%;
+    width: 97%;
   }    
   .testIcon{
   display: flex;
@@ -74,47 +104,14 @@
     right: 15px;
   }
 
-  header{
-    background: hsla(0,0%,8%,.9);
-    position: fixed;
-    width: 100%;
-    z-index: 200;
-    padding: 20px 0px 10px 0px;    
-    position: fixed;
-    top: 80px;
-  }
-  .navbarTop
-  {
-    display: flex;
-    align-items: center;
-  }
-  .NavbarRight{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .TextNavbarLeft{    
-    color: white;
-    font-family: 'netflixBold';
-  }
+  @media only screen and (max-width: 600px) {
+    #MyList{
+      margin-top: -75px;
+      height: 130px;
 
-  .NavbarRight{
-    display: flex;
-    align-items: center;
-    float: right;
+    }
+    .carrouselcontainer{
+      margin-top: -55px;
+      padding-top: 65px;
+    }
   }
-  .TextNavbarRight{
-    color: white;
-    text-align: end;
-    padding-right: 20px;
-}
-.imgNavbar img{
-  border-radius: 5px;
-  fill: white;
-}
-.iconEditProfil svg{
-  width: 40px;
-  height: 40px;
-  color: white;
-  stroke: white;
-}

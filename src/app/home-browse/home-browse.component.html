@@ -1,42 +1,24 @@
-<app-header></app-header>
-<header (scroll)="onscroll()">
-    <div class="container">
-        <div class="row">
-            <nav class="col-12 navbarTop" >
-                <div class="col-7 NavbarRight">
-                    <div class="iconEditProfil col-1">
-                        <a routerLink="/ManageProfiles" >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" stroke="" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-                              </svg>
-                        </a>                    
-                    </div>
-                    
-                    <div class="col-9 TextNavbarLeft">
-                        <h2>Edit Profile</h2>
-                        <h3>Choose a profile icon.</h3>
-                    </div>
-                </div>
-                <div class="col-5 NavbarRight">
-                    <div class="col-xs-6 col-md-10 TextNavbarRight">
-                        <h3>Norman</h3>
-                    </div>
-                    <div class="col-xs-6 col-md-2 imgNavbar">
-                        <img src="../../assets/images/Netflix-avatar1.png" style="max-width:89px">
-                    </div>
-                    
-                </div>
-
-            </nav>
-
+<app-header-browse class="headerBrowser"></app-header-browse>
+<app-film-wrapper class="filmWrapper"></app-film-wrapper>
+<div class="container" id="MyList">
+    <div class="imgType" (mouseover)="HoverType=true" (mouseout)="HoverType=false">
+        <div class="typeTitle">
+            <h2>The Classics</h2>
         </div>
-
+        <owl-carousel-o [options]="customOptions" #owlCar>
+        <ng-container *ngFor="let slide of myList"><div class="typeTitle">
+            <h2>The Classics</h2>
+        </div>
+          <ng-template carouselSlide [id]= "slide.image">
+            <img class="CarouselImg" [src]="slide.image" [alt]="slide.id" [title]="slide.image">
+          </ng-template>
+        </ng-container>
+        </owl-carousel-o>
     </div>
-</header>
+</div>
+
 <div class="carrouselcontainer">
-    
     <div class="container">
-        <div *ngFor="let slide of data">
             <div class="imgType" (mouseover)="HoverType=true" (mouseout)="HoverType=false">
                 <div class="typeTitle">
                     <h2>The Classics</h2>
@@ -71,6 +53,6 @@
                 </a>
                 </div>
             </div>
-        </div>                            
     </div>
 </div>
+<app-footer></app-footer>

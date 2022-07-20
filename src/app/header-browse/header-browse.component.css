@@ -1,6 +1,5 @@
 .navbar{
-    background-color: #141414;
-    height: 122px;
+    height: 80px;
     display: flex;
     z-index: 200;
     align-content: flex-start;
