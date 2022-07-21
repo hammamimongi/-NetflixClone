@@ -96,3 +96,14 @@ ul{
     max-width: 70px;
     max-height: 70px;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .avatar-compte img{
+        width: 90px;
+    }
+    .svg-icon[_ngcontent-wrp-c30] {
+        position: fixed;
+        transform: translate(15px, -36px);
+    }
+  }
