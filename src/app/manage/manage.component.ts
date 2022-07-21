@@ -23,16 +23,16 @@ export class ManageComponent implements OnInit {
 
   
   data =[
-    {id: Number(1), image:'../../assets/images/Netflix-avatar1.png'},
-    {id: Number(2), image:'../../assets/images/Netflix-avatar2.png'},
-    {id: Number(3), image:'../../assets/images/Netflix-avatar3.png'},
-    {id: Number(4), image:'../../assets/images/Netflix-avatar4.png'},
-    {id: Number(5), image:'../../assets/images/Netflix-avatar5.png'},
-    {id: Number(6), image:'../../assets/images/Netflix-avatar1.png'},
-    {id: Number(7), image:'../../assets/images/Netflix-avatar2.png'},
-    {id: Number(8), image:'../../assets/images/Netflix-avatar3.png'},
-    {id: Number(9), image:'../../assets/images/Netflix-avatar4.png'},
-    {id: Number(10), image:'../../assets/images/Netflix-avatar5.png'}
+    {id: Number(1), image:'assets/images/Netflix-avatar1.png'},
+    {id: Number(2), image:'assets/images/Netflix-avatar2.png'},
+    {id: Number(3), image:'ssets/images/Netflix-avatar3.png'},
+    {id: Number(4), image:'assets/images/Netflix-avatar4.png'},
+    {id: Number(5), image:'assets/images/Netflix-avatar5.png'},
+    {id: Number(6), image:'assets/images/Netflix-avatar1.png'},
+    {id: Number(7), image:'assets/images/Netflix-avatar2.png'},
+    {id: Number(8), image:'assets/images/Netflix-avatar3.png'},
+    {id: Number(9), image:'assets/images/Netflix-avatar4.png'},
+    {id: Number(10), image:'assets/images/Netflix-avatar5.png'}
   ];
 
 
