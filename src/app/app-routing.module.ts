@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'browse', component: HomeBrowseComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'headerBrowser', component: HeaderBrowseComponent },
-  { path: '**', component: HeaderBrowseComponent },
+  { path: '**', component: ProfilComponent },
 
 
 ];
