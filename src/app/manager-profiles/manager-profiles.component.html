@@ -7,7 +7,7 @@
                 <ul class="chooseProfile">
                     <li class="Profile" *ngFor=" let profil of Profils;let i = index">
                         <div>
-                            <a (click)="editProfilFn()"  class="profile-link"  (click)="profilSelected(i)">
+                            <a (click)="profilSelected(i)" (click)="editProfilFn()"  class="profile-link" >
                                 <diV class="avatar-compte">
                                     <img class="img-fluid" src="{{profil.image}}">
                                 </diV>

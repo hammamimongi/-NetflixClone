@@ -10,6 +10,8 @@ import { EventEmitter } from '@angular/core';
 })
 export class ManageComponent implements OnInit {
 
+  @Input() ProfilsData:any;
+  @Output() public EditImageProfil = new EventEmitter();
   HoverType:boolean;
   HoverBtn:boolean;
   typeImgProfile:any;
@@ -19,7 +21,9 @@ export class ManageComponent implements OnInit {
     this.HoverBtn=false;
   }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    console.log(this.ProfilsData.image+"---------");
+   }
 
   
   data =[
@@ -35,7 +39,6 @@ export class ManageComponent implements OnInit {
     {id: Number(10), image:'../../assets/images/Netflix-avatar5.png'}
   ];
   
-  //@Input() ImagePath="Netflix-avatar1.png";
   ImagePath="Netflix-avatar1.png";
 
 
@@ -78,5 +81,9 @@ export class ManageComponent implements OnInit {
     }
   }
 
+  EditImageProfilFn(){
+    this.EditImageProfil.emit(false);
+
+  }
 
 }

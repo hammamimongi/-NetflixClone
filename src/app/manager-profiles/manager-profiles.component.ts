@@ -31,6 +31,9 @@ export class ManagerProfilesComponent implements OnInit {
   }
   
 
+  profilSelected(i:Number){
+    this.profilSelectedId=i;
+  }
   editProfilFn(){ 
     
     this.editProfil=!this.editProfil;
@@ -38,9 +41,6 @@ export class ManagerProfilesComponent implements OnInit {
   editManageProfilePicFn(){ 
     
     this.editManageProfilePic=!this.editManageProfilePic;
-  }
-  profilSelected(i:Number){
-    this.profilSelectedId=i;
   }
     
 
