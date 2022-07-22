@@ -10,6 +10,8 @@ import { EventEmitter } from '@angular/core';
 export class EditProfilComponent implements OnInit {
 
   @Input() TesteditProfil: any;
+  //@Input() ImagePath="Netflix-avatar1.png";
+  ImagePath="Netflix-avatar1.png";
   @Output() public childTestEdit= new EventEmitter();
   constructor() { }
 
@@ -22,5 +24,6 @@ export class EditProfilComponent implements OnInit {
     this.childTestEdit.emit(this.TesteditProfil);
     console.log("fnct child  after ------------"+this.TesteditProfil);
   }
+  
 
 }
