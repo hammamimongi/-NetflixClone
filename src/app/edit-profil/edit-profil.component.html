@@ -6,11 +6,11 @@
             </div>
             <div class="col-md-12 profileData">
                 <div class="col-md-3 profileAvatar">
-                    <img src="../../assets/images/{{ImagePath}}">
+                    <img src="{{ProfilsData.image}}">
                 </div>
                 <div class="col-md-9 profileEdit">
                     <div class="col-md-12 textEdlit">
-                        <input type="text" class="col-12 form-controls" placeholder="Name">
+                        <input type="text" class="col-12 form-controls" placeholder="Name" value="{{ProfilsData.nom | titlecase}}">
                     </div>
                     <div class="col-md-12 langageEdlit">
                         <span>Language:</span>

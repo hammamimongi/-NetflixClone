@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ManagerProfilesComponent implements OnInit {
   editProfil =false;
   editManageProfilePic=false
-  profilSelectedId:any;
+  profilSelectedId:any=2;
 
   constructor() { }
 
@@ -25,6 +25,9 @@ export class ManagerProfilesComponent implements OnInit {
   ngOnInit(): void {
     console.log("fnct parent  ------------"+this.editProfil);
     
+    console.log("8888  ------------"+this.Profils[this.profilSelectedId]);
+    console.log("9999  ------------"+this.Profils[this.profilSelectedId].nom);
+
   }
   
 

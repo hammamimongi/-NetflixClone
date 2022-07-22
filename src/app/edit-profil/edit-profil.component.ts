@@ -17,7 +17,9 @@ export class EditProfilComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log("8888  ------------"+this.ProfilsData.nom);
+    console.log("1010  ------------"+this.ProfilsData);
+    console.log("1010  ------------"+this.ProfilsData.nom);
+
   }
   TesteditProfilTest(){
     console.log("fnct child  before ------------"+this.TesteditProfil);
