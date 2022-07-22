@@ -8,12 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ManagerProfilesComponent implements OnInit {
   editProfil =false;
   editManageProfilePic=false
+  profilSelectedId:any;
 
   constructor() { }
 
-  ngOnInit(): void {
-    console.log("fnct parent  ------------"+this.editProfil);
-  }
   
   Profils =[
     {id: Number(1),nom:"Norman" ,image:'../../assets/images/Netflix-avatar1.png'},
@@ -24,6 +22,12 @@ export class ManagerProfilesComponent implements OnInit {
 
   ];
 
+  ngOnInit(): void {
+    console.log("fnct parent  ------------"+this.editProfil);
+    
+  }
+  
+
   editProfilFn(){ 
     
     this.editProfil=!this.editProfil;
@@ -31,6 +35,9 @@ export class ManagerProfilesComponent implements OnInit {
   editManageProfilePicFn(){ 
     
     this.editManageProfilePic=!this.editManageProfilePic;
+  }
+  profilSelected(i:Number){
+    this.profilSelectedId=i;
   }
     
 

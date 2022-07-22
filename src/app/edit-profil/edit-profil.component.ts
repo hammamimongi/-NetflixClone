@@ -10,12 +10,14 @@ import { EventEmitter } from '@angular/core';
 export class EditProfilComponent implements OnInit {
 
   @Input() TesteditProfil: any;
+  @Input() ProfilsData:any;
   //@Input() ImagePath="Netflix-avatar1.png";
   ImagePath="Netflix-avatar1.png";
   @Output() public childTestEdit= new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
+    console.log("8888  ------------"+this.ProfilsData.nom);
   }
   TesteditProfilTest(){
     console.log("fnct child  before ------------"+this.TesteditProfil);

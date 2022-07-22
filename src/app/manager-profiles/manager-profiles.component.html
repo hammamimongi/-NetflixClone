@@ -5,9 +5,9 @@
             <div class="list-profiles">
                 <h1 class="profileText">Who's watching?</h1>                
                 <ul class="chooseProfile">
-                    <li class="Profile" *ngFor=" let profil of Profils">
+                    <li class="Profile" *ngFor=" let profil of Profils;let i = index">
                         <div>
-                            <a (click)="editProfilFn()"  class="profile-link">
+                            <a (click)="editProfilFn()"  class="profile-link"  (click)="profilSelected(i)">
                                 <diV class="avatar-compte">
                                     <img class="img-fluid" src="{{profil.image}}">
                                 </diV>
@@ -27,7 +27,7 @@
         </div>
     </div>
 </section>
-<app-edit-profil [TesteditProfil]="editProfil" (childTestEdit)="editProfil=$event" *ngIf="editProfil">
+<app-edit-profil [ProfilsData]="Profils[profilSelectedId]" [TesteditProfil]="editProfil" (childTestEdit)="editProfil=$event" *ngIf="editProfil">
 
 </app-edit-profil>
 
