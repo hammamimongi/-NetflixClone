@@ -2,57 +2,19 @@
     background-color: #141414;
     width: 100%;
 }
-
-.TewtWrrapFilm{
-    bottom: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    left: 4%;
-    position: absolute;
-    top: 0;
-    width: 36%;
+.textAccueil{ 
+    color: white;
+    font-family: 'netflixMedium';
 }
-
-
-.opacityBG{ 
-    background: linear-gradient(77deg,rgba(0,0,0,.6),transparent 85%);
-    bottom: 0;
-    left: 0;
-    opacity: 1;
-    position: absolute;
-    right: 26.09%;
-    top: 0;
-    transition: opacity .5s;
+.BoxBgFilm{ 
+    padding:5px ;
+    height: 100%;
 }
-.TitleFilm{
-    color: #fff;
-    font-size: 1.6vw;
-    margin: 1vw 0;
-    font-family: netflixMedium;
+.BoxBgFilm img{ 
+    width:100%;
+    height: 100%;
+    object-fit:cover;
 }
-.btnFilm{
-    margin-top: 1.5vw;
-    display: flex;
-}
-.DescFilm{
-    color: #fff;
-    font-size: 1.2vw;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 0.1vw;
-    font-family: netflixMedium;
-}
-.moreInfoBtn a{
-    color: #fff;
-    background-color: gray;
-    
-
-}
-a button{
-    border-radius: 5px;
-    font-family: netflixMedium;
-}
-svg{
-    margin-right: 10px;
-}
+.container{ 
+    margin-top: 90px;
+  }

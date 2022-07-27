@@ -35,11 +35,11 @@ export class HomeBrowseComponent implements OnInit {
 
   customOptions: OwlOptions = {
     loop: true,
-    autoWidth:false,
-    autoHeight:false,
+    autoWidth:true,
+    autoHeight:true,
     mouseDrag: true,
-    touchDrag: false,
-    pullDrag: false,
+    touchDrag: true,
+    pullDrag: true,
     dots: false,
     navSpeed: 700,
     navText: ["<div id='navTest' class='nav-button owl-prev' style='height:240px'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
@@ -54,7 +54,7 @@ export class HomeBrowseComponent implements OnInit {
         items: 5
       },
       940: {
-        items: 7
+        items: 6
       }
     },
     nav: false

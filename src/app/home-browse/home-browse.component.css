@@ -1,10 +1,6 @@
 .headerBrowser{
     z-index: 2;
 }
-.filmWrapper{
-    position: relative;
-    top: 0px;
-}
 
 
 .carrouselcontainer{ 
@@ -27,9 +23,7 @@
   max-height: 160px;
   padding-top: 30px;
 }
-.container{ 
-  max-width:100% ;
-}
+
 .CarouselImg:hover{ 
     border:1px solid white;
 }
@@ -46,9 +40,7 @@
     top: -300px;
   }
   #MyList{
-    margin-top: -250px;
-    z-index: 102;
-    position: relative;
+    background-color: #141414;
   }
   .btn-prev{
     display: flex;

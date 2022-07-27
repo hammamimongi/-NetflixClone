@@ -1,5 +1,7 @@
-.container{
+section{
     background-color: #141414;  
+}
+.container{
     width: 100%; 
     z-index: 100;
 }
@@ -56,6 +58,9 @@ ul{
     .avatar-compte img{
         width: 90px;
     }
+    .chooseProfile li{
+        padding: 0px;
+    }
   }
   
 .avatar-compte{
@@ -88,9 +93,9 @@ ul{
     line-height: 60px;
 }
 .list-profiles-container{
-    position: fixed;
+    position: relative;
     bottom: 0;
-    top: 25%;
+    top: 185px;
     left: 0;
     right: 0;
     

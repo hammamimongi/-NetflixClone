@@ -1,6 +1,6 @@
 <app-header></app-header>
 <div class="container-edit" *ngIf="!EditImageProfil">
-        <div class="col-md-4">
+        <div class="col-11 col-lg-4 col-md-6">
             <div class="col-md-12 editText">
                 <h1>Edit Profile</h1>
             </div>
@@ -17,18 +17,18 @@
                     </div>
                 </div> 
                 <div class="col-md-9 profileEdit">
-                    <div class="col-md-12 textEdlit">
+                    <div class="col-12 textEdlit">
                         <input type="text" class="col-12 form-controls" placeholder="Name" value="{{ProfilsData.nom | titlecase}}">
                     </div>
-                    <div class="col-md-12 langageEdlit">
+                    <div class="col-12 langageEdlit">
                         <span>Language:</span>
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             </button>
-                            <div class="col-md-12 dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="col-md-2 dropdown-item" href="#">Action</a>
-                              <a class="col-md-2 dropdown-item" href="#">Another action</a>
-                              <a class="col-md-2 dropdown-item" href="#">Something else here</a>
+                            <div class="col-12 dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="col-2 dropdown-item" href="#">Action</a>
+                              <a class="col-2 dropdown-item" href="#">Another action</a>
+                              <a class="col-2 dropdown-item" href="#">Something else here</a>
                             </div>
                           </div>
                     </div>
@@ -70,13 +70,16 @@
 
                 </div>             
             </div>
-            <div class="col-md-12 btnEditPage d-flex">
+            <div class="col-12 btnEditPage d-flex">
                 <div class="btnSave">
                     <button routerLink="/browser" class="saveBtn">Save</button>
 
                 </div>
                 <div class="btnCancel">
                     <button routerLink="/ManageProfiles" (click)="TesteditProfilTest()" class="cancelBtn">Cancel</button>
+                </div>
+                <div class="btnCancel">
+                    <button routerLink="/ManageProfiles" (click)="TesteditProfilTest()" class="cancelBtn">Delete Profile</button>
                 </div>
 
             </div>

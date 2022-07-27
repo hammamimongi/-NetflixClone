@@ -118,3 +118,18 @@
   color: white;
   stroke: white;
 }
+@media only screen and (max-width: 600px) {
+  .iconEditProfil {
+      padding-right: 30px;
+  }
+  h2{
+    font-size: 15px;
+  }
+  h3{
+    font-size: 13px;
+  }
+  .iconEditProfil a svg{
+    width: 25px;
+    height: 25px;
+  }
+}
