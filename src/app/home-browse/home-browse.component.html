@@ -11,8 +11,10 @@
           <ng-container *ngFor="let slide of myList"><div class="typeTitle">
               <h2>The Classics</h2>
           </div>
-            <ng-template carouselSlide [id]= "slide.image">
-              <img class="CarouselImg" style="margin-right: 10px;" [src]="slide.image" [alt]="slide.id" [title]="slide.image">
+            <ng-template carouselSlide [id]= "slide.image" >
+              <img class="CarouselImg" style="margin-right: 10px;"
+              (mouseover)="showPopupFnT()" (mouseout)="showPopup=false"  [src]="slide.image" [alt]="slide.id" [title]="slide.image">
+
             </ng-template>
           </ng-container>
           </owl-carousel-o>

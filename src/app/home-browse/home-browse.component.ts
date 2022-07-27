@@ -11,9 +11,12 @@ export class HomeBrowseComponent implements OnInit {
 
   HoverType:boolean;
   HoverBtn:boolean;
+  showPopup:boolean;
   constructor() {
     this.HoverType=false;
-    this.HoverBtn=false; }
+    this.HoverBtn=false;
+    this.showPopup=false; 
+  }
 
   ngOnInit(): void {
   }
@@ -60,4 +63,8 @@ export class HomeBrowseComponent implements OnInit {
     nav: false
   }
 
+  showPopupFnT() {
+    this.showPopup=true;
+    console.log("trrrrrrrr"+this.showPopup);
+  }
 }
