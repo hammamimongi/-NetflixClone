@@ -25,9 +25,10 @@
   #btn-nextId{
     position: relative;
     top: -300px;
+    right: -90%;
     display: flex;
     justify-content: end;
-    width: 100%;
+    width: 10%;
   }
 
   .btn-prev{

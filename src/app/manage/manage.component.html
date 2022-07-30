@@ -43,7 +43,8 @@
                     <img class="imgTypePath" *ngIf="slides.TypePath!='text'" src="{{slides.type}}">
                 </div>
                 <owl-carousel-o [options]="customOptions" #owlCar>
-                <ng-container *ngFor="let slide of profileImage[i].images;let j = index;"><div class="typeTitle">
+                <ng-container *ngFor="let slide of profileImage[i].images;">
+                    <div class="typeTitle">
                     <h2>The Classics   </h2>
                 </div>
                   <ng-template carouselSlide [id]= "slide.image">

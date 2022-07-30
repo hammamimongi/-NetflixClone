@@ -10,9 +10,9 @@ import { EventEmitter } from '@angular/core';
 export class EditProfilComponent implements OnInit {
 
   EditImageProfil=false;
-  @Input() TesteditProfil: any;
-  @Input() DeleteProfil: any;
-  @Input() ProfilsData:any;
+  @Input() public TesteditProfil: any;
+  @Input() public DeleteProfil: any;
+  @Input() public ProfilsData:any;
   @Output() public childTestEdit= new EventEmitter();
   constructor() { }
 
