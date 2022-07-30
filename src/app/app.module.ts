@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderBrowseComponent } from './header-browse/header-browse.component';
 import { FilmWrapperComponent } from './film-wrapper/film-wrapper.component';
 import { HomeBrowseComponent } from './home-browse/home-browse.component';
+import { DeleteProfileComponent } from './delete-profile/delete-profile.component';
 
 
 
@@ -30,6 +31,7 @@ import { HomeBrowseComponent } from './home-browse/home-browse.component';
     HeaderBrowseComponent,
     FilmWrapperComponent,
     HomeBrowseComponent,
+    DeleteProfileComponent,
     ],
   imports: [
     BrowserModule,

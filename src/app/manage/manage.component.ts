@@ -73,19 +73,32 @@ export class ManageComponent implements OnInit {
       {idImage: Number(9),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABVy0BGoTOaj5BQ4NQDPopqWL8X1ZCnS1sLVmhxtKMLaDnnePNuquscUF0mQl_rvRRHi_pJKZ1_4M6SavQ_7hi8XOx2evCq47UQ.png?r=a29'},
       {idImage: Number(10),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQy-r3BAVV4g7ynm7173md_RPD_YaS48pjCA5j65eG8D3mQSjc0TTLG9THYUDSa3aTTpD28oiSORrXyMJ_kAXiU3A3mlmEVUcQ.png?r=f45'},
     ]},
-    /*
-    {type:"Classic",
-    TypePath:"text",idType: Number(1), images:[
-      {idImage: (1),image:''},
-      {idImage: Number(2),image:''},
-      {idImage: Number(3),image:''},
-      {idImage: Number(4),image:''},
-      {idImage: Number(5),image:''},
-      {idImage: Number(6),image:''},
-      {idImage: Number(7),image:''},
-      {idImage: Number(8),image:''},
-      {idImage: Number(9),image:''},
-    ]},*/
+    {type:"https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABTuAechuqhve5gbUm02jwueZZhRbpDG3VyhgvkT43PQG7kyA-rZtlJh1ehiB8CgpxehSZFDO7_a2dS0gOejKOyeABtzpzygCvQ.png?r=50f",
+    TypePath:"image",idType: Number(4), images:[
+      {idImage: Number(1),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABcHhaa9koERcNJ3ThqcLlowUGwfICi3ddeaZlIKMicbNasvwAXu2OKzuhXmfMu3xCmNus3pMhX7irTuY0l12Q3tdgHkXxvRTpw.png?r=805'},
+      {idImage: Number(2),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABfb-Sy9tm3iw0J7YDVN9abZH3dlQHmOxOjbcv7kfsrfSRm0sgz042LuhtQRmaLUf9GnMUIy0JAim6Vh2sBO6oKH3Hj_Z41FyGQ.png?r=5f8'},
+      {idImage: Number(3),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXCOdAQmBsJnzvYB3-x2Aw17AJbxweU8B-TlSc5OJaSbVCSVUfhtXgdEYnYV39Y2olbNNl7MaaDAjC97LWGVBghJmyPJNUTCmg.png?r=e21'},
+      {idImage: Number(4),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABa_Y_MMwgrHiPuaKPuYcAWj--r3W9PwhBYoxcNWONgXKJ-BxXz7iNVMFnJL1lW8KQl3Fo7AJnbbS3rpZIoCHyd2XofQB4zjLMw.png?r=eae'},
+      {idImage: Number(5),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABR9H9qsSwZTt39G9Y5jfw9UrozQ6DVevpJx5aSSANhC2B4sHOGg-Md6x3FstRbyQTjDXstZ6wiuQLfj0s0pmbpftfQPATbwjCA.png?r=dca'},
+      {idImage: Number(6),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABX65JSX2IfDCnQRrHPGVml1L3kUezLseqdcy_hQEXCNoMUaKpFCiMuE0PR_2FxASTBWBHGaCQB6D9eCa0CHaqMuAftOI_F-RxA.png?r=cec'},
+      {idImage: Number(7),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQr9BJ205SJx9F8V9uiBV4AN-ZuQWAruJ7Duwe8JNDFODbhbGLJ2TOluDos6immQ_hC2Rx4KAe_nwL8RTWmnLeKGJEShOW0B8Q.png?r=9ce'},
+      {idImage: Number(8),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXaBDHbfvSoVGFtPMi7q0MMe3RST2t6yWOzrNTYqDboKyEDtArRicGKjXN__UZY_a0vPxp3Iee5Hs-ljXt2Gls1Pyk1BNTRq0w.png?r=5d5'},
+      {idImage: Number(9),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABaxnhuKPVp8jM7VKotbciIT6fNe-iGLdf1DYjOTFfAnRA76bF617v1oUKU_L-E8q7L_DSagNkVbdMCS2Nb8_rWxmbOFeE84nSg.png?r=4b9'},
+    ]},
+      
+    {type:"https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABRK7VttZyN8N22xOgzuRNFRhJbEskeD8hSIxtuxSPVvDJymLyJIDNOSGMORJqbwL7uxjCQWkJdehB-A59BLGkokV1b2aFlUw.png?r=faa",
+    TypePath:"image",idType: Number(5), images:[
+      {idImage: (1),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWuzjvemGey2jr2wM87MeguD4nO_bjX7Lj23ZXajLd8UuzDLWeiDHAryTw_Da9_H3dQvJIBGj_ogbnPf-t7YU37iYs1Qp7ZIgA.png?r=540'},
+      {idImage: Number(2),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZ4x6ARDYMAW9K9MF6DFFIlJzEOYqWhaMX5LbszuqceEowu8L1qBzuviwA2fNmUQ0uRF5hw3R5GEnPmVsEPYybRFzlvQd-akmw.png?r=72e'},
+      {idImage: Number(3),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQ-a7MPUQfN7ZGVaLOs8K1KCE_FPoJf-RFMEJxiW4R7n6W5qJWqrynhXIIK-1FnCDrBmX2Ak5q10nggaeyaZjqOvZPywKT7uZg.png?r=a06'},
+      {idImage: Number(4),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdry120TQI4_MUmsXUHuc1dNNYbrOLaVuuuUTK7C6cYQ0-vagdWNlu61AWlOivbJKnbwg1KKqs8qxiQfggA_4Sz667Cc_1BHtg.png?r=156'},
+      {idImage: Number(5),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWCHqvfgpYM4rmNEZRLhcCoJxot-LOTGoqxE1yJvGLNAPjfmqkpsigdevrDLvn35qxJySZcEcaFo-29ve1j0H-qF5wNdUSXVng.png?r=bcc'},
+      {idImage: Number(6),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABVbWwIk92KPRdgK-k9w8iQNXwPgozF6zjuiQmBlXNhQjrXKcWNtm2GwbuYa4Kle7SEdOYHA_vi70E_m6ROiFTsfd7oyWnu0N2Q.png?r=d47'},
+      {idImage: Number(7),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABTWwxpdVcOjpMJza4VktVSLUvHEjqc70xpTyovqpbp43nNtXXCL4tM3b96phOBVffbh233rgKbUNghwYtmH2UtzVc9DxFxYefg.png?r=481'},
+      {idImage: Number(8),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbRXqGjMORDFDqpteYAv8l3rN1z4Q6pEEwxsVn5LSquYKsCX7Q-TPNITCnkZUxYh7LpMHL08385eHmaT7B6JAg8GRE1HFcwzuA.png?r=37e'},
+      {idImage: Number(9),image:'https://occ-0-116-3997.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXqIHl2Tpf8BHChAsTwUpjhcoYi1deR84OWDwxpCDUUCV-XGqFbjZLXnU7IRTSUjRLWHoDazwrk3BR7auRmK7pjv9KNu5jvvDA.png?r=4fe'},
+    ]},
+    
   ];
 
 

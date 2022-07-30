@@ -36,11 +36,11 @@
 <div class="carrouselcontainer">
     
     <div class="container">
-        <div *ngFor="let slides of profileImage; let i = index;">
+        <div class="boxImage" *ngFor="let slides of profileImage; let i = index;">
             <div class="imgType" (mouseover)="HoverType=true" (mouseout)="HoverType=false">
                 <div class="typeTitle">
                     <h2 *ngIf="slides.TypePath=='text'">{{slides.type}}</h2>
-                    <img *ngIf="slides.TypePath!='text'" src="{{slides.type}}">
+                    <img class="imgTypePath" *ngIf="slides.TypePath!='text'" src="{{slides.type}}">
                 </div>
                 <owl-carousel-o [options]="customOptions" #owlCar>
                 <ng-container *ngFor="let slide of profileImage[i].images;let j = index;"><div class="typeTitle">

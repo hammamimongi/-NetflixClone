@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DeleteProfileComponent } from './delete-profile/delete-profile.component';
 import { EditProfilComponent } from './edit-profil/edit-profil.component';
 import { FilmWrapperComponent } from './film-wrapper/film-wrapper.component';
 import { FooterComponent } from './footer/footer.component';
@@ -18,6 +19,8 @@ const routes: Routes = [
   { path: 'browse', component: HomeBrowseComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'headerBrowser', component: HeaderBrowseComponent },
+  { path: 'deleteProfile', component: DeleteProfileComponent },
+
   { path: '**', component: ProfilComponent },
 
 

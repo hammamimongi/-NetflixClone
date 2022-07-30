@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManagerProfilesComponent implements OnInit {
   editProfil =false;
+  deleteProfil =false;
   editManageProfilePic=false
   profilSelectedId:any=2;
+  nomProfil:String="";
 
   constructor() { }
 

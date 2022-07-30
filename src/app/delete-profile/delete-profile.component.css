@@ -1,0 +1,72 @@
+section{
+    background-color: #141414;
+    color: white;
+}
+.box-Details{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxDetProfile{
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px #313131;
+    border-bottom: solid 1px #313131;
+    padding: 20px 0px;
+}
+.imageProfile img{
+    width: 100%;
+    border-radius: 5px;
+}
+h5{
+    font-family: netflixMedium;   
+    font-size: 15px;
+}
+.nomProfile{
+    padding-top: 10px;
+    color: gray;
+    font-size: 17px;
+}
+.descProfil{
+    padding: 0px 25px 10px 25px;
+    display: flex;
+    align-items: center;
+}
+.btnDeleteProfile{
+    display: flex;
+    font-family: 'netflixMedium';
+    padding-top: 40px;
+}
+.KeepProfile{
+    margin-right: 10px;
+    background: white;
+    padding: 8px 35px;
+    color: #141414;
+    cursor: pointer;
+}
+.DeleteProfile{
+    margin-right: 10px;
+    border: solid 1px gray;
+    padding: 8px 35px;
+    color: gray;
+    cursor: pointer;
+}
+
+.KeepProfile:hover{
+    background-color: red;
+    color: white;
+}
+.DeleteProfile:hover{
+    border: solid 1px white;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .DeleteProfile{
+        padding: 5px 19px;
+    }
+    .KeepProfile{
+        padding: 5px 19px;
+    }
+}

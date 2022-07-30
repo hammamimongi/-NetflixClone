@@ -1,7 +1,7 @@
 .carrouselcontainer{ 
     background-color: #141414;
     width: 100%;
-    padding-top: 250px;
+    padding: 250px 0px 150px 0px;
 }
 .imgType{ 
     height: 220px;
@@ -23,9 +23,11 @@
   }
 
   #btn-nextId{
-    float: right;    
     position: relative;
     top: -300px;
+    display: flex;
+    justify-content: end;
+    width: 100%;
   }
 
   .btn-prev{
@@ -63,7 +65,7 @@
   .typeTitle h2{
     font-family: netflixMedium;
     color: white;
-  }    
+  }     
   .testIcon{
   display: flex;
     justify-content: flex-end;
@@ -132,4 +134,9 @@
     width: 25px;
     height: 25px;
   }
+}
+
+.imgTypePath{
+  padding: 20px 0px;
+  max-width: 300px;
 }
