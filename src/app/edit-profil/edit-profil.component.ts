@@ -1,5 +1,4 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
-import { EventEmitter } from '@angular/core';
+import { Component, Input, OnInit, Output , EventEmitter} from '@angular/core';
 
 
 @Component({
@@ -11,7 +10,9 @@ export class EditProfilComponent implements OnInit {
 
   EditImageProfil=false;
   @Input() public TesteditProfil: any;
-  @Input() public DeleteProfil: any;
+  @Output() public deleteProfilChild= new EventEmitter();
+  @Input() public DeleteProfilTest:any;
+
   @Input() public ProfilsData:any;
   @Output() public childTestEdit= new EventEmitter();
   constructor() { }
@@ -30,11 +31,8 @@ export class EditProfilComponent implements OnInit {
   }
 
   TestDeleteProfil(){
-    console.log("fnct child  before ------------"+this.DeleteProfil);
-
-    this.TesteditProfil=!this.TesteditProfil;
-    this.childTestEdit.emit(this.TesteditProfil);
-    console.log("fnct child  after ------------"+this.DeleteProfil);
+    this.DeleteProfilTest=true;
+    this.deleteProfilChild.emit(this.DeleteProfilTest);
   }
 
   EditImageProfilFn(){

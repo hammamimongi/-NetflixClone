@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { ValueConverter } from '@angular/compiler/src/render3/view/template';
+import { Component, Input, OnInit, Output , EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-manager-profiles',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManagerProfilesComponent implements OnInit {
   editProfil =false;
-  deleteProfil =false;
+  public deleteProfil=false;
   editManageProfilePic=false
   profilSelectedId:any=2;
   nomProfil:String="";
@@ -37,13 +38,18 @@ export class ManagerProfilesComponent implements OnInit {
     this.profilSelectedId=i;
   }
   editProfilFn(){ 
-    
     this.editProfil=!this.editProfil;
   }
-  editManageProfilePicFn(){ 
-    
+  editManageProfilePicFn(){
+        
     this.editManageProfilePic=!this.editManageProfilePic;
   }
-    
+  TestDeleteProfil(){
+    this.deleteProfil!=this.deleteProfil;
+
+  }
+
+  deleteProfileAccount(idProfile : number){
+  }
 
 }

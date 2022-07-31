@@ -18,7 +18,7 @@
                 </div> 
                 <div class="col-md-9 profileEdit">
                     <div class="col-12 textEdlit">
-                        <input type="text" class="col-12 form-controls" placeholder="Name" value="{{ProfilsData.nom | titlecase}}">
+                        <input type="text" autofocus  class="col-12 form-controls" placeholder="Name" value="{{ProfilsData.nom | titlecase}}">
                     </div>
                     <div class="col-12 langageEdlit">
                         <span>Language:</span>
@@ -76,10 +76,10 @@
 
                 </div>
                 <div class="btnCancel">
-                    <button routerLink="/ManageProfiles" (click)="TesteditProfilTest()" class="cancelBtn">Cancel</button>
+                    <button (click)="TesteditProfilTest()" routerLink="/ManageProfiles" class="cancelBtn">Cancel</button>
                 </div>
                 <div class="btnCancel">
-                    <button routerLink="/deleteProfile" (click)="TestDeleteProfil()" class="cancelBtn">Delete Profile</button>
+                    <button (click)="TestDeleteProfil()" class="cancelBtn">Delete Profile</button>
                 </div>
 
             </div>
@@ -88,3 +88,8 @@
 </div>
 <app-manage (EditImageProfil)="EditImageProfil=$event" *ngIf="EditImageProfil" [ProfilsData]="ProfilsData"></app-manage>
 
+<script>
+    $(function () {
+   $('[autofocus]').focus()
+});
+</script>
