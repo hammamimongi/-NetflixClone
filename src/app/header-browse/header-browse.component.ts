@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderBrowseComponent implements OnInit {
 
+  public hoverAnumation="";
+  public OtherProfile=false;
+  public basicNav:any;
   constructor() { }
 
   ngOnInit(): void {

@@ -1,10 +1,61 @@
 .navbar{
     height: 80px;
     display: flex;
-    z-index: 200;
+    z-index: 1000;
     align-content: flex-start;
+    background-color: #141414;
+    height: 70px;
 }
 .logo-netflix img{
     width: 115px;
 
 }
+.collapse{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 40px;
+}
+.righSide{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.imageLink img{
+    border-radius: 4px;
+    width: 35px;
+    margin-right: 8px;
+
+}
+
+.imageLink svg{
+    align-items: center;
+}
+.imageLink svg{
+    width: 12px;
+    height: 12px;
+    color: white;
+}
+
+.HoverSvg{    
+    width: 12px;
+    height: 12px;
+    color: white;
+    transition: 0.3s;
+    transform: rotate(180deg);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-family: netflixLight;
+    font-size: 14px;
+}
+
+@media (min-width: 1400px){
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 100%;
+    }
+    }
