@@ -12,6 +12,7 @@ export class ManagerProfilesComponent implements OnInit {
   editManageProfilePic=false
   profilSelectedId:any=2;
   nomProfil:String="";
+  public profilSelectedIdTest=true;
 
   constructor() { }
 
@@ -30,9 +31,7 @@ export class ManagerProfilesComponent implements OnInit {
     
     console.log("8888  ------------"+this.Profils[this.profilSelectedId]);
     console.log("9999  ------------"+this.Profils[this.profilSelectedId].nom);
-
   }
-  
 
   profilSelected(i:Number){
     this.profilSelectedId=i;
@@ -41,7 +40,6 @@ export class ManagerProfilesComponent implements OnInit {
     this.editProfil=!this.editProfil;
   }
   editManageProfilePicFn(){
-        
     this.editManageProfilePic=!this.editManageProfilePic;
   }
   TestDeleteProfil(){

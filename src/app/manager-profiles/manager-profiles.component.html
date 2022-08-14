@@ -1,5 +1,5 @@
 <app-header></app-header>
-<section  *ngIf="editProfil==false && deleteProfil==false" >
+<section *ngIf="editProfil==false && deleteProfil==false">
     <div class="container" id="container-profil">
         <div class="list-profiles-container">
             <div class="list-profiles">
@@ -31,6 +31,6 @@
 *ngIf="editProfil && !deleteProfil">
 </app-edit-profil>
 <app-delete-profile (childTestEdit)="editProfil=$event" 
-(deleteProfilChild)="deleteProfil=$event" *ngIf="deleteProfil">
+(deleteProfilChild)="deleteProfil=$event" [ProfilsData]="Profils[profilSelectedId]" *ngIf="deleteProfil">
 </app-delete-profile>
 

@@ -15,13 +15,20 @@ export class EditProfilComponent implements OnInit {
 
   @Input() public ProfilsData:any;
   @Output() public childTestEdit= new EventEmitter();
+  @Output() public ProfilesDataDelete = new EventEmitter();
+  
+
   constructor() { }
 
   ngOnInit(): void {
     console.log("1010  ------------"+this.ProfilsData);
     console.log("1010  ------------"+this.ProfilsData.nom);
-
   }
+
+  eventDeleteProile() {
+    this.ProfilesDataDelete.emit(this.ProfilsData);
+  }
+
   TesteditProfilTest(){
     console.log("fnct child  before ------------"+this.TesteditProfil);
 

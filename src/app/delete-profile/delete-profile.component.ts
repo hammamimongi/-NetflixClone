@@ -11,6 +11,8 @@ export class DeleteProfileComponent implements OnInit {
   public DeleteProfilTest=true;
   @Output() public childTestEdit= new EventEmitter();
   TesteditProfil=false;
+  @Input() public ProfilsData:any;
+
 
   constructor() { }
 

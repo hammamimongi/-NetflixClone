@@ -38,14 +38,14 @@ h5{
     font-family: 'netflixMedium';
     padding-top: 40px;
 }
-.KeepProfile a{
+.KeepProfile {
     margin-right: 10px;
     background: white;
     padding: 8px 35px;
     color: #141414;
     cursor: pointer;
 }
-.DeleteProfile a{
+.DeleteProfile {
     margin-right: 10px;
     border: solid 1px gray;
     padding: 8px 35px;
@@ -53,20 +53,12 @@ h5{
     cursor: pointer;
 }
 
-.KeepProfile a:hover{
+.KeepProfile:hover{
     background-color: red;
     color: white;
 }
-.DeleteProfile a:hover{
+.DeleteProfile:hover{
     border: solid 1px white;
     color: white;
 }
 
-@media only screen and (max-width: 600px) {
-    .DeleteProfile{
-        padding: 5px 19px;
-    }
-    .KeepProfile{
-        padding: 5px 19px;
-    }
-}
